@@ -46,7 +46,6 @@
             transition: .5s;
         }
 
-
         .kembali {
             position: fixed;
             width: 80px;
@@ -56,7 +55,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(217, 217, 217);
+            background-color: rgb(255, 255, 255);
             border-radius: 50%;
             z-index: 22;
             transform: translateY(1000px);
@@ -67,10 +66,15 @@
             margin-top: 10px;
             width: 30px;
             height: 30px;
-            border-top: solid 7px rgb(255, 170, 0);
-            border-right: solid 7px rgb(255, 255, 255);
+            border-top: solid 7px rgb(0, 208, 255);
+            border-right: solid 7px rgb(0, 208, 255);
             transform: rotate(-45deg);
             border-radius: 5px;
+        }
+
+        .kembali:hover span {
+            border-top: solid 7px rgb(0, 153, 255);
+            border-right: solid 7px rgb(0, 153, 255);
         }
 
         .kembali.block {
@@ -78,7 +82,7 @@
         }
 
         .kembali:hover {
-            background-color: rgb(151, 151, 151);
+            background-color: rgb(234, 234, 234);
         }
 
         .auto-typing-container {
@@ -116,8 +120,8 @@
 
         .flip-card {
             background-color: transparent;
-            width: 290px;
-            height: 354px;
+            width: 390px;
+            height: 454px;
             perspective: 1000px;
             cursor: pointer;
         }
@@ -234,8 +238,7 @@
                 <div class="flip-card mx-auto">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <p class="text-6xl">🥕</p>
-                            <p class="text-center mt-6 font-medium text-2xl text-white">Hover Me</p>
+                            <p class="text-9xl">🗿</p>
                         </div>
                         <div class="flip-card-back">
                         </div>
@@ -256,7 +259,64 @@
                         I am currently learning at IDN Boarding School Sentul as a RPL student. I learn much things
                         here, i
                         really like to learn all about IT.
+
                     </p>
+
+
+                    <div class="pb-4 border-b border-gray-200 dark:border-gray-700">
+                        <ul class="flex justify-center -mb-px text-sm font-medium text-center" id="default-tab"
+                            data-tabs-toggle="#default-tab-content" role="tablist">
+                            <li class="px-4" role="presentation">
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab"
+                                    data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                    aria-selected="false">Previous Education</button>
+                            </li>
+                            <li class="px-4" role="presentation">
+                                <button
+                                    class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                                    id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                                    aria-controls="dashboard" aria-selected="false">Language used</button>
+                            </li>
+                            <li class="px-4" role="presentation">
+                                <button
+                                    class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                                    id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
+                                    aria-controls="settings" aria-selected="false">Experiences</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="default-tab-content">
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel"
+                            aria-labelledby="profile-tab">
+                            <h5 class="text-lg text-black dark:text-white font-bold">2013 - 2019</h5>
+                            <p class="text-gray-500">SD PalmKids Palembang</p>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel"
+                            aria-labelledby="dashboard-tab">
+                            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the
+                                <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated
+                                    content</strong>. Clicking another tab will toggle the visibility of this one for
+                                the next. The tab JavaScript swaps classes to control the content visibility and
+                                styling.</p>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel"
+                            aria-labelledby="dashboard-tab">
+                            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the
+                                <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated
+                                    content</strong>. Clicking another tab will toggle the visibility of this one for
+                                the next. The tab JavaScript swaps classes to control the content visibility and
+                                styling.</p>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel"
+                            aria-labelledby="settings-tab">
+                            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the
+                                <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated
+                                    content</strong>. Clicking another tab will toggle the visibility of this one for
+                                the next. The tab JavaScript swaps classes to control the content visibility and
+                                styling.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
