@@ -105,6 +105,28 @@
             animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
         }
 
+        /* Yang bawah */
+        .auto-typing-container-2 {
+            display: flex;
+            margin: 10px auto 100px auto;
+            width: 60%;
+            text-align: end;
+            justify-content: center;
+        }
+
+        /* Buat yg bawah */
+        #auto-typing-text-2 {
+            font-size: 44px;
+            font-family: 'Courier New', Courier, monospace;
+            border-right: 2px solid black;
+            /* efek kursor */
+            white-space: nowrap;
+            /* untuk menjaga teks agar tidak pindah baris */
+            overflow: hidden;
+            /* untuk menjaga teks agar tidak pindah baris */
+            animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+        }
+
         /* Animasi kursor berkedip */
         @keyframes blink-caret {
 
@@ -136,19 +158,6 @@
             overflow: hidden;
             /* untuk menjaga teks agar tidak pindah baris */
             animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
-        }
-
-        /* Animasi kursor berkedip */
-        @keyframes blink-caret {
-
-            from,
-            to {
-                border-color: transparent
-            }
-
-            50% {
-                border-color: black;
-            }
         }
 
         .flip-card {
@@ -213,6 +222,22 @@
 
         #kar {
             width: 710px;
+        }
+
+        #box {
+            transition: .3s ease-in-out;
+        }
+
+        #box:hover {
+            border: #66cdaa;
+            background-color: rgb(137, 228, 0);
+            cursor: pointer;
+
+            h2 {
+                color: aliceblue;
+            }
+
+            transform: translateY(-15px);
         }
 
         @media screen and (max-width:1025px) {
@@ -527,79 +552,79 @@
 
 
                 <!-- Card 1 -->
-                <div
-                    class="p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700">
+                <div class=" p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700"
+                    id="box">
                     <img src="img/RRQ 1.png" alt="" class="rounded-lg">
                     <h2 class="py-7 font-Poppins font-bold text-gray-700 dark:text-gray-400 text-center text-4xl">
                         RRQ
                         <br> Card <br> Website</h2>
                     <button data-modal-target="default-modal" data-modal-toggle="default-modal"
-                        class="block text-white text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="block text-white text-xl bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button">
                         Visit Website <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
                 <!-- Card 2 -->
-                <div
-                    class="p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700">
+                <div class=" p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700"
+                    id="box">
                     <img src="img/Por 1.png" alt="" class="rounded-lg" style="height: 368px;">
                     <h2 class="py-7 font-Poppins font-bold text-gray-700 dark:text-gray-400 text-center text-4xl">
                         First
                         <br> Protofolio <br> Website</h2>
                     <button data-modal-target="default-modal-2" data-modal-toggle="default-modal-2"
-                        class="block text-white text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="block text-white text-xl bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button">
                         Visit Website <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
                 <!-- Card 3 -->
-                <div
-                    class="p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700">
+                <div class=" p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700"
+                    id="box">
                     <img src="img/Gearz.png" alt="" class="rounded-lg" style="height: 368px;">
                     <h2 class="py-7 font-Poppins font-bold text-gray-700 dark:text-gray-400 text-center text-4xl">
                         Gearzzz
                         <br> Company Profile <br> Website</h2>
                     <button data-modal-target="default-modal-3" data-modal-toggle="default-modal-3"
-                        class="block text-white text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="block text-white text-xl bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button">
                         Visit Website <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
                 <!-- Card 4 -->
-                <div
-                    class="p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700">
+                <div class=" p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700"
+                    id="box">
                     <img src="img/RRQ.png" alt="" class="rounded-lg" style="height: 368px;">
                     <h2 class="py-7 font-Poppins font-bold text-gray-700 dark:text-gray-400 text-center text-4xl">
                         Team RRQ
                         <br> Website <br> Remake</h2>
                     <button data-modal-target="default-modal-4" data-modal-toggle="default-modal-4"
-                        class="block text-white text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="block text-white text-xl bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button">
                         Visit Website <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
                 <!-- Card 5 -->
-                <div
-                    class="p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700">
+                <div class=" p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700"
+                    id="box">
                     <img src="img/Muslim Web.png" alt="" class="rounded-lg">
                     <h2 class="py-7 font-Poppins font-bold text-gray-700 dark:text-gray-400 text-center text-4xl">
                         Muslim
                         <br> Website</h2>
                     <button data-modal-target="default-modal-5" data-modal-toggle="default-modal-5"
-                        class="block text-white text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="block text-white text-xl bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button">
                         Visit Website <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
                 <!-- Card 6 -->
-                <div
-                    class="p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700">
+                <div class=" p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-green-100 dark:border-gray-700"
+                    id="box">
                     <img src="img/Move.png" alt="" class="rounded-lg">
                     <h2 class="py-7 font-Poppins font-bold text-gray-700 dark:text-gray-400 text-center text-4xl">
                         Le Move
                         <br> Website</h2>
                     <button data-modal-target="default-modal-6" data-modal-toggle="default-modal-6"
-                        class="block text-white text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="block text-white text-xl bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button">
                         Visit Website <i class="fa-solid fa-arrow-right"></i>
                     </button>
@@ -649,16 +674,15 @@
                         </div>
                         <!-- Modal footer -->
                         <div
-                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            class="flex items-center justify-center md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
                             <a href="http://127.0.0.1:5501/index.html"><button data-modal-hide="default-modal"
                                     type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
+                                    class="text-white bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg text-2xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <!-- Main modal 2-->
 
@@ -701,10 +725,10 @@
                         </div>
                         <!-- Modal footer -->
                         <div
-                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            class="flex items-center justify-center md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
                             <a href="http://127.0.0.1:5501/index.html"><button data-modal-hide="default-modal-2"
                                     type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
+                                    class="text-white bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg text-2xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
                             </a>
                         </div>
                     </div>
@@ -752,10 +776,10 @@
                         </div>
                         <!-- Modal footer -->
                         <div
-                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            class="flex items-center justify-center md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
                             <a href="http://127.0.0.1:5501/index.html"><button data-modal-hide="default-modal-3"
                                     type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
+                                    class="text-white bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg text-2xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
                             </a>
                         </div>
                     </div>
@@ -798,17 +822,17 @@
                                             class="text-2xl ps-2">CSS</span></i>
                                     <i class="fa-brands fa-js text-yellow-300 py-5"><span
                                             class="text-2xl ps-2">JavaScript</span></i>
-                                            <i class="fa-brands fa-bootstrap text-purple-500"><span
-                                                class="text-2xl ps-2">Bootsrap</span></i>
+                                    <i class="fa-brands fa-bootstrap text-purple-500"><span
+                                            class="text-2xl ps-2">Bootsrap</span></i>
                                 </div>
                             </p>
                         </div>
                         <!-- Modal footer -->
                         <div
-                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            class="flex items-center justify-center md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
                             <a href="http://127.0.0.1:5501/index.html"><button data-modal-hide="default-modal"
                                     type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
+                                    class="text-white bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg text-2xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
                             </a>
                         </div>
                     </div>
@@ -856,10 +880,10 @@
                         </div>
                         <!-- Modal footer -->
                         <div
-                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            class="flex items-center justify-center md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
                             <a href="http://127.0.0.1:5501/index.html"><button data-modal-hide="default-modal"
                                     type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
+                                    class="text-white bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg text-2xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
                             </a>
                         </div>
                     </div>
@@ -892,7 +916,7 @@
                         </div>
                         <!-- Modal body -->
                         <div class="p-4 md:p-5 space-y-2">
-                            <img src="img/Por 1.png" alt="" style="border-radius: 5px;">
+                            <img src="img/Move.png" alt="" style="border-radius: 5px;">
                             <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400 font-Poppins">
                                 This Website was made with:
                                 <div class="flex flex-col text-4xl">
@@ -902,88 +926,154 @@
                                             class="text-2xl ps-2">CSS</span></i>
                                     <i class="fa-brands fa-js text-yellow-300"><span
                                             class="text-2xl ps-2">JavaScript</span></i>
-                                            <h1
-                                            class="text-3xl ps-2 pt-5 text-blue-600 font-bold">TAILWINDCSS</h1>
+                                    <svg class="w-20 h-20 pt-5 text-blue-600 dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M11.8 5.7A4.8 4.8 0 0 0 7 10a3.4 3.4 0 0 1 2.7-1.7c1.7 0 3 2 3.8 2.6a5.7 5.7 0 0 0 5.4 1c2-.7 2.9-3 3.1-4-1 1.4-2.4 2.2-4.3 1.2-1.2-.6-2.1-3.4-6-3.3Zm-5 6.3A4.8 4.8 0 0 0 2 16.2a3.4 3.4 0 0 1 2.7-1.7c1.7 0 3 2 3.8 2.6a5.7 5.7 0 0 0 5.4.9c2-.7 3-2.9 3.1-4-1 1.4-2.4 2.3-4.2 1.3-1.3-.7-2.2-3.4-6-3.3Z" />
+                                    </svg>
+                                    <h1 class="text-2xl ps-2 text-blue-600 font-Poppins font-bold">TAILWINDCSS</h1>
+
                                 </div>
                             </p>
                         </div>
                         <!-- Modal footer -->
                         <div
-                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                            <a href="http://127.0.0.1:5501/src/public/index.html"><button data-modal-hide="default-modal"
-                                    type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
+                            class="flex items-center justify-center md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            <a href="http://127.0.0.1:5501/src/public/index.html"><button
+                                    data-modal-hide="default-modal" type="button"
+                                    class="text-white bg-green-400 hover:bg-green-600 focus:ring-none focus:outline-none  font-medium rounded-lg text-2xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VISIT</button>
                             </a>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <!-- END ISIAN -->
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#66cdaa" fill-opacity="1"
+                d="M0,96L0,96L43.6,96L43.6,96L87.3,96L87.3,128L130.9,128L130.9,256L174.5,256L174.5,192L218.2,192L218.2,64L261.8,64L261.8,64L305.5,64L305.5,160L349.1,160L349.1,160L392.7,160L392.7,128L436.4,128L436.4,224L480,224L480,288L523.6,288L523.6,64L567.3,64L567.3,192L610.9,192L610.9,128L654.5,128L654.5,256L698.2,256L698.2,256L741.8,256L741.8,128L785.5,128L785.5,128L829.1,128L829.1,160L872.7,160L872.7,256L916.4,256L916.4,224L960,224L960,128L1003.6,128L1003.6,192L1047.3,192L1047.3,288L1090.9,288L1090.9,256L1134.5,256L1134.5,256L1178.2,256L1178.2,64L1221.8,64L1221.8,224L1265.5,224L1265.5,64L1309.1,64L1309.1,32L1352.7,32L1352.7,160L1396.4,160L1396.4,96L1440,96L1440,0L1396.4,0L1396.4,0L1352.7,0L1352.7,0L1309.1,0L1309.1,0L1265.5,0L1265.5,0L1221.8,0L1221.8,0L1178.2,0L1178.2,0L1134.5,0L1134.5,0L1090.9,0L1090.9,0L1047.3,0L1047.3,0L1003.6,0L1003.6,0L960,0L960,0L916.4,0L916.4,0L872.7,0L872.7,0L829.1,0L829.1,0L785.5,0L785.5,0L741.8,0L741.8,0L698.2,0L698.2,0L654.5,0L654.5,0L610.9,0L610.9,0L567.3,0L567.3,0L523.6,0L523.6,0L480,0L480,0L436.4,0L436.4,0L392.7,0L392.7,0L349.1,0L349.1,0L305.5,0L305.5,0L261.8,0L261.8,0L218.2,0L218.2,0L174.5,0L174.5,0L130.9,0L130.9,0L87.3,0L87.3,0L43.6,0L43.6,0L0,0L0,0Z">
+            </path>
+        </svg>
 
-            <!-- Back Tzy -->
-            <a href="#" class="kembali">
-                <span></span>
-            </a>
-            <!-- END BACK TZY -->
+        <h1 class="text-center font-Poppins font-bold text-6xl mt-52">WHO AM I?</h1>
+        <h1 class="text-center font-Poppins font-bold text-3xl mt-9">I AM</h1>
+        <div class="auto-typing-container-2">
+            <p id="auto-typing-text-2"></p>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="mt-30">
+            <path fill="#a2d9ff" fill-opacity="1"
+                d="M0,96L48,96C96,96,192,96,288,117.3C384,139,480,181,576,208C672,235,768,245,864,234.7C960,224,1056,192,1152,160C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <!-- END ISIAN -->
+
+        <!-- Back Tzy -->
+        <a href="#" class="kembali">
+            <span></span>
+        </a>
+        <!-- END BACK TZY -->
 
 
-            <!-- fontawesome & flowbite -->
-            <script src="https://kit.fontawesome.com/e81773e2de.js" crossorigin="anonymous"></script>
-            <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+        <!-- fontawesome & flowbite -->
+        <script src="https://kit.fontawesome.com/e81773e2de.js" crossorigin="anonymous"></script>
+        <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
 
-            <!-- TERBANG BALIK -->
-            <script>
-                // scroll
-                window.addEventListener('scroll', function () {
-                    const back = document.querySelector('.kembali');
-                    back.classList.toggle('block', window.scrollY > 150)
-                })
-            </script>
+        <!-- TERBANG BALIK -->
+        <script>
+            // scroll
+            window.addEventListener('scroll', function () {
+                const back = document.querySelector('.kembali');
+                back.classList.toggle('block', window.scrollY > 150)
+            })
+        </script>
 
-            <!-- NGETIK -->
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    const texts = [
-                        "أهلا و سهلا",
-                        "ДОБРО ПОЖАЛОВАТЬ",
-                        "いらっしゃいませ",
-                        "Welcome",
-                        "Selamat Datang",
-                    ];
+        <!-- NGETIK -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const texts = [
+                    "أهلا و سهلا",
+                    "ДОБРО ПОЖАЛОВАТЬ",
+                    "いらっしゃいませ",
+                    "Welcome",
+                    "Selamat Datang",
+                ];
 
-                    const typingTextElement = document.getElementById('auto-typing-text');
-                    let textIndex = 0;
-                    let charIndex = 0;
+                const typingTextElement = document.getElementById('auto-typing-text');
+                let textIndex = 0;
+                let charIndex = 0;
 
-                    function typeText() {
-                        if (charIndex < texts[textIndex].length) {
-                            typingTextElement.textContent += texts[textIndex].charAt(charIndex);
-                            charIndex++;
-                            setTimeout(typeText, 100); // Kecepatan auto typing (dalam milidetik)
-                        } else {
-                            setTimeout(eraseText, 2000); // Tunggu 2 detik setelah selesai mengetik
-                        }
+                function typeText() {
+                    if (charIndex < texts[textIndex].length) {
+                        typingTextElement.textContent += texts[textIndex].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeText, 100); // Kecepatan auto typing (dalam milidetik)
+                    } else {
+                        setTimeout(eraseText, 2000); // Tunggu 2 detik setelah selesai mengetik
                     }
+                }
 
-                    function eraseText() {
-                        if (charIndex > 0) {
-                            typingTextElement.textContent = texts[textIndex].substring(0, charIndex - 1);
-                            charIndex--;
-                            setTimeout(eraseText, 50); // Kecepatan menghapus teks (dalam milidetik)
-                        } else {
-                            textIndex++;
-                            if (textIndex >= texts.length) {
-                                textIndex = 0;
-                            }
-                            setTimeout(typeText, 100); // Tunggu 0.5 detik sebelum mulai mengetik teks baru
+                function eraseText() {
+                    if (charIndex > 0) {
+                        typingTextElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(eraseText, 50); // Kecepatan menghapus teks (dalam milidetik)
+                    } else {
+                        textIndex++;
+                        if (textIndex >= texts.length) {
+                            textIndex = 0;
                         }
+                        setTimeout(typeText, 100); // Tunggu 0.5 detik sebelum mulai mengetik teks baru
                     }
+                }
 
-                    typeText();
-                });
-            </script>
+                typeText();
+            });
+        </script>
 
+        <!--NGETIK 2-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const texts = [
+                    "PROGRAMMER",
+                    "BOSS",
+                    "KING",
+                    "UNIVERSE",
+                    "NATHANIELLO",
+                ];
+
+                const typingTextElement = document.getElementById('auto-typing-text-2');
+                let textIndex = 0;
+                let charIndex = 0;
+
+                function typeText() {
+                    if (charIndex < texts[textIndex].length) {
+                        typingTextElement.textContent += texts[textIndex].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeText, 100); // Kecepatan auto typing (dalam milidetik)
+                    } else {
+                        setTimeout(eraseText, 900); // Tunggu 2 detik setelah selesai mengetik
+                    }
+                }
+
+                function eraseText() {
+                    if (charIndex > 0) {
+                        typingTextElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(eraseText, 50); // Kecepatan menghapus teks (dalam milidetik)
+                    } else {
+                        textIndex++;
+                        if (textIndex >= texts.length) {
+                            textIndex = 0;
+                        }
+                        setTimeout(typeText, 100); // Tunggu 0.5 detik sebelum mulai mengetik teks baru
+                    }
+                }
+
+                typeText();
+            });
+        </script>
 
     </body>
 
